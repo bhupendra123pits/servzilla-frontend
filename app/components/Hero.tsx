@@ -44,17 +44,21 @@ export default function Hero() {
           </p>
         </div>
 
-        <div className="col-span-12 lg:col-span-5 relative">
-          <div className="aspect-square rounded-3xl overflow-hidden border border-[#f0e080] relative z-10 bg-[#FFF8D6]">
-            <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHx-wjZoHSCe0S1nMsHwSPVs9WhVQGnpYyU9XmmmEq8sbnLRd2VHE6oon2zmgfX6qR0zlS4pS3apM0oe8gWAo5iRPTgLJjF6uHqqVCi1RqxX0pPdpjP4RMUlt9nFn5dlrjx0PZqXuzaSB7hZjRLlQkLC1jO3Fd1ViglY44FBF09dMyuuaJFRHBIE_mMgwsiVgkDVRgYCI_G7mmbOVXeFW5_KSAJmLNINmrRY1R4w0Gav2Xz9hDZtiBBUjvFn1jgqBwwLQYeYtJLW0"
-              alt="E-commerce operations, handled"
-              className="w-full h-full object-cover"
-            />
+          {/* Right image — only this part fixed */}
+        <div className="col-span-12 lg:col-span-5 relative overflow-hidden">
+          <div className="relative z-10 w-full max-w-sm mx-auto lg:max-w-none">
+            <div className="aspect-square rounded-3xl overflow-hidden border border-[#f0e080] bg-[#FFF8D6]">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHx-wjZoHSCe0S1nMsHwSPVs9WhVQGnpYyU9XmmmEq8sbnLRd2VHE6oon2zmgfX6qR0zlS4pS3apM0oe8gWAo5iRPTgLJjF6uHqqVCi1RqxX0pPdpjP4RMUlt9nFn5dlrjx0PZqXuzaSB7hZjRLlQkLC1jO3Fd1ViglY44FBF09dMyuuaJFRHBIE_mMgwsiVgkDVRgYCI_G7mmbOVXeFW5_KSAJmLNINmrRY1R4w0Gav2Xz9hDZtiBBUjvFn1jgqBwwLQYeYtJLW0"
+                alt="E-commerce operations, handled by Servzilla"
+                className="w-full h-full object-cover"
+                loading="eager"
+              />
+            </div>
           </div>
 
-          <div className="absolute -top-12 -right-12 w-64 h-64 bg-[#E84040]/10 rounded-full blur-3xl pointer-events-none" />
-          <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-[#FFD600]/15 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute top-0 right-0 w-64 h-64 bg-[#E84040]/10 rounded-full blur-3xl pointer-events-none translate-x-1/2 -translate-y-1/2" />
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#FFD600]/15 rounded-full blur-3xl pointer-events-none -translate-x-1/2 translate-y-1/2" />
         </div>
       </div>
     </section>

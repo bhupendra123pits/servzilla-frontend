@@ -189,7 +189,7 @@ export default function Pricing() {
     <>
     <Navbar/>
       {/* Hero */}
-      <section className="pt-36 pb-24 bg-[#F7F7F5]" aria-labelledby="pricing-heading">
+      <section className="pt-25 pb-24 bg-[#F7F7F5]" aria-labelledby="pricing-heading">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FDF0F0] border border-[#f5c8c8] text-[#A32D2D] text-xs font-bold tracking-widest uppercase mb-6">

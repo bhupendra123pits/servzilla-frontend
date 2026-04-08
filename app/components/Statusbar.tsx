@@ -1,6 +1,6 @@
 const STATS = [
   { value: "500+", label: "Stores served globally" },
-  { value: "4-hr", label: "Response SLA" },
+  { value: "4 - hr", label: "Response SLA" },
   { value: "98%",  label: "Client retention" },
   { value: "Free", label: "Trial — no card required" },
 ];
