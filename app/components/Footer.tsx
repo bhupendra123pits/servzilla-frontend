@@ -18,8 +18,8 @@ const FOOTER_LINKS = {
     { label: "Virtual Assistants", href: "/virtual-assistants" },
     { label: "Pricing",            href: "/pricing" },
     { label: "Free Trial",         href: "/free-trial" },
-    { label: "Privacy Policy",     href: "/privacy" },
-    { label: "Terms of Service",   href: "/terms" },
+    { label: "Privacy Policy",     href: "/privacypolicy" },
+    
   ],
 };
 

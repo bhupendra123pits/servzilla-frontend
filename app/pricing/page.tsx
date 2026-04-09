@@ -697,9 +697,9 @@ export default function Pricing() {
       </section>
 
       {/* CTA Banner */}
-      <section className="py-24 px-6 md:px-8 bg-[#F7F7F5]" aria-label="Call to action">
+      <section className="py-16 md:py-24 px-4 sm:px-6 md:px-8 bg-[#F7F7F5] overflow-hidden">
         <div className="max-w-7xl mx-auto bg-[#E84040] rounded-[3rem] p-12 md:p-24 relative overflow-hidden text-center md:text-left">
-          <div className="relative z-10 grid grid-cols-12 gap-8 items-center">
+          <div className="relative z-10">
             <div className="col-span-12 lg:col-span-8">
               <h2 className="font-headline text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight leading-tight">
                 Not sure where to start?{" "}

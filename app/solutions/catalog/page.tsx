@@ -280,9 +280,9 @@ export default function BuildYourCatalog() {
       </section>
 
       {/* CTA Banner */}
-      <section className="py-24 px-6 md:px-8 bg-[#F7F7F5]" aria-label="Call to action">
-        <div className="max-w-7xl mx-auto bg-[#E84040] rounded-[3rem] p-12 md:p-24 relative overflow-hidden text-center md:text-left">
-          <div className="relative z-10 grid grid-cols-12 gap-8 items-center">
+      <section className="py-24 px-6 md:px-8 bg-[#F7F7F5]">
+        <div className="max-w-7xl mx-auto bg-[#E84040] rounded-[3rem] p-12 md:p-24 sm:p-10 md:p-16 lg:p-24 relative overflow-hidden text-center md:text-left">
+          <div className="relative z-10">
             <div className="col-span-12 lg:col-span-8">
               <h2 className="font-headline text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight leading-tight">
                 Ready to build your catalog?{" "}

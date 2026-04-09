@@ -92,6 +92,7 @@ export default function FreeTrial() {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
+    console.log(form, "Hello World");
     e.preventDefault();
     setLoading(true);
     await new Promise((r) => setTimeout(r, 1200));
@@ -366,15 +367,15 @@ export default function FreeTrial() {
 
               {/* Trust badges */}
               <div className="grid grid-cols-3 gap-3">
-                <div className="bg-[#FFFFFF] border border-[#E8E8E4] rounded-2xl p-4 text-center">
+                <div className="bg-[#FFFFFF] border border-[#E8E8E4] rounded-2xl p-2 text-center">
                   <p className="text-xl font-extrabold text-[#E84040]">No</p>
                   <p className="text-xs text-[#6B6B6B] mt-0.5">Credit card</p>
                 </div>
-                <div className="bg-[#FFFFFF] border border-[#E8E8E4] rounded-2xl p-4 text-center">
+                <div className="bg-[#FFFFFF] border border-[#E8E8E4] rounded-2xl p-2 text-center">
                   <p className="text-xl font-extrabold text-[#E84040]">No</p>
                   <p className="text-xs text-[#6B6B6B] mt-0.5">Commitment</p>
                 </div>
-                <div className="bg-[#FFF8D6] border border-[#f0e080] rounded-2xl p-4 text-center">
+                <div className="bg-[#FFF8D6] border border-[#f0e080] rounded-2xl p-2 text-center">
                   <p
                     className="text-xl font-extrabold"
                     style={{ color: "#7a5f00" }}
@@ -411,15 +412,15 @@ export default function FreeTrial() {
                     started within 48 hours. Check your inbox.
                   </p>
                   <div className="flex flex-col gap-3">
-                    <Link
+                    {/* <Link
                       href="/solutions"
                       className="block text-center bg-[#E84040] hover:bg-[#C42C2C] text-white py-3 rounded-xl font-bold text-sm transition-colors"
                     >
                       Explore our solutions
-                    </Link>
+                    </Link> */}
                     <Link
                       href="/pricing"
-                      className="block text-center border border-[#E8E8E4] text-[#1A1A1A] py-3 rounded-xl font-bold text-sm hover:bg-[#FDF0F0] hover:border-[#f5c8c8] transition-all"
+                      className="block text-center border border-[#E8E8E4] text-[#FFD600] py-3 rounded-xl font-bold text-sm hover:bg-[#FDF0F0] hover:border-[#f5c8c8] transition-all"
                     >
                       See pricing
                     </Link>
@@ -582,25 +583,7 @@ export default function FreeTrial() {
                   >
                     {loading ? (
                       <>
-                        <svg
-                          className="animate-spin w-5 h-5"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                        >
-                          <circle
-                            className="opacity-25"
-                            cx="12"
-                            cy="12"
-                            r="10"
-                            stroke="white"
-                            strokeWidth="4"
-                          />
-                          <path
-                            className="opacity-75"
-                            fill="white"
-                            d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
-                          />
-                        </svg>
+                        <span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
                         Submitting...
                       </>
                     ) : (
@@ -716,12 +699,9 @@ export default function FreeTrial() {
       </section>
 
       {/* CTA Banner */}
-      <section
-        className="py-24 px-6 md:px-8 bg-[#F7F7F5]"
-        aria-label="Final call to action"
-      >
+      <section className="py-16 md:py-24 px-4 sm:px-6 md:px-8 bg-[#F7F7F5] overflow-hidden">
         <div className="max-w-7xl mx-auto bg-[#E84040] rounded-[3rem] p-12 md:p-24 relative overflow-hidden text-center md:text-left">
-          <div className="relative z-10 grid grid-cols-12 gap-8 items-center">
+          <div className="relative z-10 ">
             <div className="col-span-12 lg:col-span-8">
               <h2 className="font-headline text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight leading-tight">
                 Still deciding?{" "}
