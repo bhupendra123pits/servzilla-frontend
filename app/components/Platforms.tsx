@@ -34,7 +34,7 @@ export default function Platforms() {
 
         <p className="text-center mt-10 text-sm text-[#6B6B6B]">
           Amazon · eBay · Shopify · Etsy · Walmart · WooCommerce · Magento ·{" "}
-          <Link href="/platforms" className="text-[#E84040] font-semibold hover:text-[#C42C2C] hover:underline transition-colors">
+          <Link href="/" className="text-[#E84040] font-semibold hover:text-[#C42C2C] hover:underline transition-colors">
             and more →
           </Link>
         </p>
