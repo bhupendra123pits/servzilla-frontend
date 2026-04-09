@@ -26,7 +26,7 @@ export default function CtaBanner() {
             Start free trial
           </Link>
           <Link
-            href="/solutions"
+            href="/solutions/grow"
             className="text-white border border-white/30 px-10 py-5 rounded-2xl font-bold text-lg hover:bg-white/10 transition-all"
           >
             See what we do

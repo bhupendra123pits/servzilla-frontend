@@ -32,7 +32,7 @@ export default function Hero() {
               Start free trial
             </Link>
             <Link
-              href="/solutions"
+              href="/solutions/grow"
               className="px-8 py-4 rounded-xl border border-[#E8E8E4] text-[#1A1A1A] font-bold text-lg hover:bg-[#FDF0F0] hover:border-[#f5c8c8] transition-all"
             >
               See what we do
