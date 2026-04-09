@@ -280,7 +280,7 @@ export default function BuildYourCatalog() {
       </section>
 
       {/* CTA Banner */}
-      <section className="py-24 px-6 md:px-8 bg-[#F7F7F5]">
+      <section className="py-16 md:py-24 px-4 sm:px-6 md:px-8 bg-[#F7F7F5] overflow-hidden">
         <div className="max-w-7xl mx-auto bg-[#E84040] rounded-[3rem] p-12 md:p-24 sm:p-10 md:p-16 lg:p-24 relative overflow-hidden text-center md:text-left">
           <div className="relative z-10">
             <div className="col-span-12 lg:col-span-8">
