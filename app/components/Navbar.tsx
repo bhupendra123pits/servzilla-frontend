@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
+import SearchBar from "./searchBar";
 
 const NAV_ITEMS = [
   {
@@ -128,12 +129,8 @@ export default function Navbar() {
 
         {/* Desktop CTAs */}
         <div className="hidden md:flex items-center space-x-6">
-          {/* <Link
-            href="/login"
-            className="text-sm text-[#1A1A1A] font-semibold hover:text-[#E84040] transition-colors"
-          >
-            Login
-          </Link> */}
+          <SearchBar />
+      
           <Link
             href="/free-trial"
             className="bg-[#E84040] hover:bg-[#C42C2C] text-white px-6 py-2.5 rounded-lg font-bold text-sm transition-colors"
@@ -160,6 +157,9 @@ export default function Navbar() {
       {/* Mobile menu */}
       {open && (
         <div className="md:hidden bg-[#FFFFFF] border-t border-[#E8E8E4] px-6 py-6 space-y-1">
+          <div className="pb-4">
+            <SearchBar mobile />
+          </div>
           {NAV_ITEMS.map((item) => (
             <div key={item.label}>
               <button
@@ -198,13 +198,8 @@ export default function Navbar() {
           ))}
 
           <div className="pt-4 flex flex-col gap-3 border-t border-[#E8E8E4] mt-2">
-            {/* <Link
-              href="/login"
-              onClick={() => setOpen(false)}
-              className="text-center text-[#1A1A1A] font-semibold py-2 border border-[#E8E8E4] rounded-lg hover:bg-[#FDF0F0] hover:border-[#f5c8c8] hover:text-[#E84040] transition-all"
-            >
-              Login
-            </Link> */}
+            
+            
             <Link
               href="/free-trial"
               onClick={() => setOpen(false)}
@@ -212,6 +207,7 @@ export default function Navbar() {
             >
               Start free trial
             </Link>
+           
           </div>
         </div>
       )}
